@@ -75,7 +75,7 @@ class EndResponse(BaseModel):
 
 @app.get("/health")
 async def health_check():
-    return {"status": "UP"}
+    return {"status": "UP", "cors": "enabled"}
 
 @app.post("/session/start", response_model=SessionResponse)
 async def start_session(request: SessionStartRequest):
