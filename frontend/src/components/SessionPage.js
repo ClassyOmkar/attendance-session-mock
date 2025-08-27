@@ -72,23 +72,28 @@ const SessionPage = () => {
 
   const formatDateTime = (dateString) => {
     try {
+      // The backend is sending IST time but in UTC format
+      // We need to add 5 hours 30 minutes to convert to proper IST
       const date = new Date(dateString);
       if (isNaN(date.getTime())) {
         return 'Invalid Date';
       }
       
+      // Add 5 hours 30 minutes for IST (UTC+5:30)
+      const istDate = new Date(date.getTime() + (5.5 * 60 * 60 * 1000));
+      
       // Debug log
       console.log('Original date:', dateString);
       console.log('Parsed date:', date);
+      console.log('IST adjusted date:', istDate);
       
-      const istTime = date.toLocaleString('en-US', {
+      const istTime = istDate.toLocaleString('en-US', {
         day: '2-digit',
         month: '2-digit',
         year: 'numeric',
         hour: '2-digit',
         minute: '2-digit',
-        second: '2-digit',
-        timeZone: 'Asia/Kolkata'
+        second: '2-digit'
       });
       
       console.log('IST time:', istTime);
