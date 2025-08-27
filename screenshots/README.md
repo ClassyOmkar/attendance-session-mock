@@ -16,7 +16,7 @@ This directory contains screenshots of the Attendance Session Mock application s
   - Smooth animations and modern UI
 
 ### 2. Home Page (Light Theme)
-![Home Page Light Theme](home light.png)
+![Home Page Light Theme](home%20light.png)
 - **Description**: Clean light theme version of the home page
 - **Features**:
   - White background with dark text
@@ -26,7 +26,7 @@ This directory contains screenshots of the Attendance Session Mock application s
   - Theme toggle functionality demonstrated
 
 ### 3. Home Page (Light Theme - Alternative)
-![Home Page Light Theme Alternative](home light-2.png)
+![Home Page Light Theme Alternative](home%20light-2.png)
 - **Description**: Alternative view of light theme home page
 - **Features**:
   - Different angle or state of light theme
@@ -34,7 +34,7 @@ This directory contains screenshots of the Attendance Session Mock application s
   - Professional appearance maintained
 
 ### 4. Session Details (Active - Dark Theme)
-![Session Details Active Dark](session active-dark.png)
+![Session Details Active Dark](session%20active-dark.png)
 - **Description**: Active session management page in dark theme
 - **Features**:
   - Navigation bar with back button and theme toggle
@@ -45,7 +45,7 @@ This directory contains screenshots of the Attendance Session Mock application s
   - Auto-refresh functionality
 
 ### 5. Session Details (Active - Light Theme)
-![Session Details Active Light](session active-light.png)
+![Session Details Active Light](session%20active-light.png)
 - **Description**: Active session management page in light theme
 - **Features**:
   - Same functionality as dark theme
@@ -54,7 +54,7 @@ This directory contains screenshots of the Attendance Session Mock application s
   - Theme switching capability demonstrated
 
 ### 6. Session Details (Ended - Dark Theme)
-![Session Details Ended Dark](session-ended dark.png)
+![Session Details Ended Dark](session-ended%20dark.png)
 - **Description**: Session after being ended in dark theme
 - **Features**:
   - "ENDED" status badge in grey
@@ -64,7 +64,7 @@ This directory contains screenshots of the Attendance Session Mock application s
   - Historical data display
 
 ### 7. Attendees List (Light Theme)
-![Attendees List Light](session attendance list light.png)
+![Attendees List Light](session%20attendance%20list%20light.png)
 - **Description**: Detailed view of attendees list in light theme
 - **Features**:
   - Clear list of checked-in students
@@ -73,7 +73,7 @@ This directory contains screenshots of the Attendance Session Mock application s
   - Scrollable list interface
 
 ### 8. Session Student List
-![Session Student List](session student list.png)
+![Session Student List](session%20student%20list.png)
 - **Description**: General view of student attendance list
 - **Features**:
   - Multiple students checked in
@@ -121,7 +121,7 @@ This directory contains screenshots of the Attendance Session Mock application s
   - Theme switching demonstrated
 
 ### 13. Success Toast Notification
-![Success Toast](success toast.png)
+![Success Toast](success%20toast.png)
 - **Description**: Toast notification for successful actions
 - **Features**:
   - Top-right positioned notification
