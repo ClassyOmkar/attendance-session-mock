@@ -123,4 +123,22 @@ Both backend and frontend are configured for easy deployment:
 
 ## Screenshots
 
-See the `screenshots/` directory for UI examples.
+Here are some key screenshots showcasing the application's features:
+
+### Home Page (Dark Theme)
+![Home Page](screenshots/home-dark.png)
+*Professional landing page with dark Spotify theme, centered layout, and modern UI*
+
+### Session Management
+![Session Details](screenshots/session-active.png)
+*Active session with real-time attendee tracking, management controls, and status indicators*
+
+### Student Check-in Modal
+![Check-in Modal](screenshots/checkin-modal-dark.png)
+*Elegant modal for student registration with validation and professional styling*
+
+### Theme Switching
+![Light Theme](screenshots/home-light.png)
+*Light theme demonstration showing the application's theme switching capability*
+
+**View all screenshots in the [screenshots directory](screenshots/) for a complete overview of all features.**
