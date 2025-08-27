@@ -116,10 +116,29 @@ The frontend will be available at `http://localhost:3000`
 
 ## Deployment
 
-Both backend and frontend are configured for easy deployment:
+This project is successfully deployed and live:
 
-- **Backend**: Can be deployed to any Python hosting platform (Railway, Render, etc.)
-- **Frontend**: Optimized for Netlify/Vercel deployment
+### Live Application
+- **🌐 Frontend (Netlify)**: [https://attendance-session-app.netlify.app/](https://attendance-session-app.netlify.app/)
+- **🔧 Backend (Render)**: [https://attendance-backend-dvcz.onrender.com](https://attendance-backend-dvcz.onrender.com)
+- **📚 API Documentation**: [https://attendance-backend-dvcz.onrender.com/docs](https://attendance-backend-dvcz.onrender.com/docs)
+
+### Deployment Configuration
+- **Frontend**: Netlify with React build
+- **Backend**: Render with FastAPI
+- **Database**: In-memory storage (no external database required)
+- **CORS**: Configured for production deployment
+
+### Features Demonstrated
+- ✅ Real-time attendance tracking
+- ✅ Multi-page React application
+- ✅ Dark/Light theme switching
+- ✅ Responsive design
+- ✅ Professional UI/UX
+- ✅ Auto-refresh functionality
+- ✅ Toast notifications
+- ✅ Form validation
+- ✅ Error handling
 
 ## Screenshots
 
