@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import config from '../config';
 
 const HomePage = () => {
   const [subject, setSubject] = useState('');
@@ -20,7 +21,7 @@ const HomePage = () => {
 
     setIsLoading(true);
     try {
-      const response = await axios.post('/session/start', { subject: subject.trim() });
+      const response = await axios.post(`${config.API_BASE_URL}/session/start`, { subject: subject.trim() });
       toast.success('Session started successfully!');
       navigate(`/session/${response.data.session_id}`);
     } catch (error) {

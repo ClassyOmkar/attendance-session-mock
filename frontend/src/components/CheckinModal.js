@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import config from '../config';
 
 const CheckinModal = ({ isOpen, onClose, sessionId, onCheckinSuccess }) => {
   const [rollNo, setRollNo] = useState('');
@@ -23,7 +24,7 @@ const CheckinModal = ({ isOpen, onClose, sessionId, onCheckinSuccess }) => {
 
     setIsLoading(true);
     try {
-      const response = await axios.post(`/session/${sessionId}/checkin`, {
+      const response = await axios.post(`${config.API_BASE_URL}/session/${sessionId}/checkin`, {
         roll_no: rollNo.trim()
       });
       toast.success(`Student checked in successfully! Total: ${response.data.total}`);

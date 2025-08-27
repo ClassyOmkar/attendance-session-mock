@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import Navbar from './Navbar';
 import CheckinModal from './CheckinModal';
 import ConfirmModal from './ConfirmModal';
+import config from '../config';
 
 const SessionPage = () => {
   const { sessionId } = useParams();
@@ -18,7 +19,7 @@ const SessionPage = () => {
 
   const fetchSession = useCallback(async () => {
     try {
-      const response = await axios.get(`/session/${sessionId}`);
+      const response = await axios.get(`${config.API_BASE_URL}/session/${sessionId}`);
       setSession(response.data);
       setError(null);
     } catch (error) {
@@ -52,7 +53,7 @@ const SessionPage = () => {
     setShowConfirmModal(false);
     setIsEnding(true);
     try {
-      await axios.post(`/session/${sessionId}/end`);
+      await axios.post(`${config.API_BASE_URL}/session/${sessionId}/end`);
       toast.success('Session ended successfully!');
       fetchSession(); // Refresh to get updated status
     } catch (error) {
