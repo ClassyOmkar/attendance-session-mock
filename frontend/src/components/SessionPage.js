@@ -76,7 +76,12 @@ const SessionPage = () => {
       if (isNaN(date.getTime())) {
         return 'Invalid Date';
       }
-      return date.toLocaleString('en-US', {
+      
+      // Debug log
+      console.log('Original date:', dateString);
+      console.log('Parsed date:', date);
+      
+      const istTime = date.toLocaleString('en-US', {
         day: '2-digit',
         month: '2-digit',
         year: 'numeric',
@@ -85,6 +90,9 @@ const SessionPage = () => {
         second: '2-digit',
         timeZone: 'Asia/Kolkata'
       });
+      
+      console.log('IST time:', istTime);
+      return istTime;
     } catch (error) {
       console.error('Error formatting date:', error);
       return 'Invalid Date';
