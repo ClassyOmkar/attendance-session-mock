@@ -16,7 +16,7 @@ This directory contains screenshots of the Attendance Session Mock application s
   - Smooth animations and modern UI
 
 ### 2. Home Page (Light Theme)
-![Home Page Light Theme](home light.png)
+![Home Page Light Theme](homelight.png)
 - **Description**: Clean light theme version of the home page
 - **Features**:
   - White background with dark text
