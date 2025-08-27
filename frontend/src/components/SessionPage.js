@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -16,7 +16,7 @@ const SessionPage = () => {
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [error, setError] = useState(null);
 
-  const fetchSession = async () => {
+  const fetchSession = useCallback(async () => {
     try {
       const response = await axios.get(`/session/${sessionId}`);
       setSession(response.data);
@@ -36,7 +36,7 @@ const SessionPage = () => {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [sessionId]);
 
   useEffect(() => {
     fetchSession();
