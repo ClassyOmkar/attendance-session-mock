@@ -21,12 +21,16 @@ const HomePage = () => {
 
     setIsLoading(true);
     try {
-      const response = await axios.post(`${config.API_BASE_URL}/session/start`, { subject: subject.trim() });
+      const response = await axios.post(`${config.API_BASE_URL}/session/start`, { subject: subject.trim() }, {
+        timeout: 60000 // 60 second timeout for Render free tier
+      });
       toast.success('Session started successfully!');
       navigate(`/session/${response.data.session_id}`);
     } catch (error) {
       console.error('Error starting session:', error);
-      if (error.response?.data?.detail) {
+      if (error.code === 'ECONNABORTED') {
+        toast.error('Request timed out. Please try again - the server may be waking up.');
+      } else if (error.response?.data?.detail) {
         toast.error(error.response.data.detail);
       } else if (error.code === 'NETWORK_ERROR') {
         toast.error('Network error. Please check your connection.');
