@@ -83,7 +83,7 @@ const SessionPage = () => {
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone
+        timeZone: 'Asia/Kolkata'
       });
     } catch (error) {
       console.error('Error formatting date:', error);
