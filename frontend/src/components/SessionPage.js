@@ -82,7 +82,8 @@ const SessionPage = () => {
         year: 'numeric',
         hour: '2-digit',
         minute: '2-digit',
-        second: '2-digit'
+        second: '2-digit',
+        timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone
       });
     } catch (error) {
       console.error('Error formatting date:', error);
