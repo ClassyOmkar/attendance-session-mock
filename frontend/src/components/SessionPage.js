@@ -42,7 +42,7 @@ const SessionPage = () => {
     fetchSession();
     const interval = setInterval(fetchSession, 10000); // Auto-refresh every 10s
     return () => clearInterval(interval);
-  }, [sessionId]);
+  }, [sessionId, fetchSession]);
 
   const endSession = async () => {
     setShowConfirmModal(true);
